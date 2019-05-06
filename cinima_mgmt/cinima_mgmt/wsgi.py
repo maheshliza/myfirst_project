@@ -1,5 +1,5 @@
 """
-WSGI config for cricket_mgmt project.
+WSGI config for cinima_mgmt project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'cricket_mgmt.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'cinima_mgmt.settings')
 
 application = get_wsgi_application()

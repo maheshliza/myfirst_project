@@ -1,4 +1,4 @@
-"""cricket_mgmt URL Configuration
+"""cinima_mgmt URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -14,10 +14,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,include
-from cricket import urls as url2
+from django.urls import path
+from  cinima import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/',include(urls2))
+    path('post/',views.api_add_base),
+    path('least/',views.api_least_movie),
+    path('max/',views.api_max_movie),
+     path('top10/',views.api_top_ten)
 ]
